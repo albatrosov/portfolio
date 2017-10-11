@@ -6,6 +6,7 @@
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
   <link rel="stylesheet" href="css/main.min.css">
+  <script src="node_modules/mustache/mustache.min.js"></script>
   <script src="js/main.min.js"></script>
 </head>
 <body>
@@ -21,42 +22,22 @@
 <!-- ==CONTENT==  -->
  
 <div class="portfolio">
-  <div class="portfolio__item">
-    <a href="">
-      <img src="" alt="">
-      <p>
-        description
-      </p>
-    </a>
-  </div>
-
-  <div class="portfolio__item">
-    <a href="">
-      <img src="" alt="">
-      <p>
-        description2
-      </p>
-    </a>
-  </div>
-
-  <div class="portfolio__item">
-    <a href="">
-      <img src="" alt="">
-      <p>
-        description3
-      </p>
-    </a>
-  </div>
-
-  <div class="portfolio__item">
-    <a href="">
-      <img src="" alt="">
-      <p>
-        description4
-      </p>
-    </a>
-  </div>
-
+  <script id="template" type="x-tmpl-mustache">
+    {{name}}
+    {{#projects}}
+      <div class="portfolio__item">
+        <a href="">
+          <img src="{{img}}">
+          <p class="firstDesc">
+            {{desc2}}
+          </p>
+          <p>
+            {{desc}}
+          </p>
+        </a>
+      </div>
+    {{/projects}}
+  </script>
 </div>
 
 <!-- ==FOOTER==  -->
