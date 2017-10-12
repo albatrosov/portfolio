@@ -5,13 +5,13 @@ $(function(){
       {
         img: 'img/portf-7.jpg',
         desc: 'WordPress, WP Template customization',
-        desc2: 'Bluetelcom.cl',
+        desc2: 'Bluetelcom',
         link: 'http://bluetelcom.cl/'
       },
       {
         img: 'img/portf-5.jpg',
         desc: 'First commercial project, PHP-mailing, Adaptive design',
-        desc2: 'Taxi service',
+        desc2: 'AnyTimeTaxi',
         link: 'http://anytimetaxipcb.com/'
       },
       {
