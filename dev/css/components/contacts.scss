@@ -1,0 +1,39 @@
+.contacts{
+  display: none;
+  width: 380px;
+  margin: auto;
+  p{
+    font-size: 36px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #575757;    
+  }
+  span{
+    transition: all .3s;
+  }
+  .email:hover span{
+    color: #ff4e50;
+  }
+  .telegram:hover span{
+    color: #01a2dd;
+  }
+  .upwork:hover span{
+    color: #6FDA44;
+  }
+  a{
+    color: #000;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    };
+  }
+}
+
+@media (max-width: 500px){
+  .contacts{
+    box-sizing: border-box;
+    padding: 5%;
+    a{
+      display: block;
+    }
+  }
+}

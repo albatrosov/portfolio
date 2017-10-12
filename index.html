@@ -4,6 +4,7 @@
   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
   <title>Lebedev</title>
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
   <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
   <link rel="stylesheet" href="css/main.min.css">
   <script src="node_modules/mustache/mustache.min.js"></script>
@@ -26,13 +27,15 @@
 </header>
  
 <!-- ==CONTENT==  -->
+
+<!-- =portfolio= -->
  
 <div class="portfolio">
   <script id="template" type="x-tmpl-mustache">
     {{name}}
     {{#projects}}
       <div class="portfolio__project">
-        <a href="">
+        <a target="_blank" href="{{link}}">
           <img src="{{img}}">
           <p class="firstDesc">
             {{desc2}}
@@ -44,6 +47,20 @@
       </div>
     {{/projects}}
   </script>
+</div>
+
+<!-- =contacts= -->
+
+<div class="contacts">
+  <p class="upwork">
+    <span>Upwork:</span> <a href="https://www.upwork.com/freelancers/~01861c8ae565acd302">Oleksandr Lebedev</a>
+  </p>
+  <p class="email">
+    <span>Email:</span> <a href="mailto:caheklebedev@gmail.com">caheklebedev@gmail.com</a>
+  </p>
+  <p class="telegram">
+    <span>Telegram:</span> <a href="https://telegram.me/albatrosov">@albatrosov</a> 
+  </p>
 </div>
 
 <!-- ==FOOTER==  -->

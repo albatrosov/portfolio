@@ -36,3 +36,15 @@
     }
   }
 }
+
+@media (max-width: 900px){
+  .menu{
+    ul{
+      li{
+        a{
+          font-size: 48px;
+        }
+      }
+    }
+  }
+}

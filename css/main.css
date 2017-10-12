@@ -8,6 +8,59 @@
 
 
 
+.contacts {
+	display: none;
+	width: 380px;
+	margin: auto;
+}
+
+.contacts p {
+	font-size: 36px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #575757;
+}
+
+.contacts span {
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+
+.contacts .email:hover span {
+	color: #ff4e50;
+}
+
+.contacts .telegram:hover span {
+	color: #01a2dd;
+}
+
+.contacts .upwork:hover span {
+	color: #6FDA44;
+}
+
+.contacts a {
+	color: #000;
+	text-decoration: none;
+}
+
+.contacts a:hover {
+	text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+
+.contacts {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 5%;
+}
+
+.contacts a {
+	display: block;
+}
+
+}
+
+
 footer {
 	padding: 50px 0;
 }
@@ -82,6 +135,14 @@ header {
 	opacity: 1;
 	-webkit-transform: translateX(0px);
 	transform: translateX(0px);
+}
+
+@media (max-width: 900px) {
+
+.menu ul li a {
+	font-size: 48px;
+}
+
 }
 
 
