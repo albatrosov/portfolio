@@ -18,40 +18,58 @@ $(function(){
   const projects = {
     projects: [
       {
-        img: 'img/portf-7.jpg',
-        desc: 'WordPress, WP Template customization',
-        desc2: 'Bluetelcom',
-        link: 'http://bluetelcom.cl/'
+        img: 'img/p1.jpg',
+        desc: 'Scroll Effects, 360° Images, Masonry, Google Maps API',
+        desc2: 'TerraDesign',
+        link: 'https://terra-design.com.ua'
       },
       {
-        img: 'img/portf-5.jpg',
-        desc: 'First commercial project, PHP-mailing, Adaptive design',
-        desc2: 'AnyTimeTaxi',
-        link: 'http://anytimetaxipcb.com/'
+        img: 'img/p5.jpg',
+        desc: 'Custom Form Inputs',
+        desc2: 'AstroVeil',
+        link: 'https://astroveil.com/'
       },
       {
-        img: 'img/portf-8.png',
+        img: 'img/p8.jpg',
+        desc: 'jQuery Accordion, YouTube API',
+        desc2: 'Tooligram Academy',
+        link: 'https://tooligram.academy/kurs/'
+      },        
+      {
+        img: 'img/p2.jpg',
+        desc: 'Sticky Header, Smooth Nav Scroll',
+        desc2: 'SMM Hero',
+        link: 'http://smmhero.su/'
+      },      
+      {
+        img: 'img/p4.png',
         desc: 'Chrome extension, AliExpress API',
         desc2: 'Dropified',
         link: 'https://chrome.google.com/webstore/detail/dropified/andfkdmajakgfaegeepffdpejahkphje'
       },
       {
-        img: 'img/portf-2.png',
-        desc: 'Adaptive and Responsive elements, Sprites',
-        desc2: 'MilliDesign (Demo)',
-        link: '/MilliDesign/index.html'
-      },
-      {
-        img: 'img/portf-1.png',
-        desc: 'jQuery-UI, Slider with customization',
-        desc2: 'Build Home (Demo)',
-        link: '/Build-Home/index.html'
-      },
-      {
-        img: 'img/portf-6.jpg',
-        desc: 'Bootstrap',
-        desc2: 'EzManagement',
+        img: 'img/p7.jpg',
+        desc: 'First Commercial Project, PHP Forms',
+        desc2: 'AnyTimeTaxi',
         link: 'http://www.ezmanagement.net/'
+      },      
+      {
+        img: 'img/p3.jpg',
+        desc: 'Various Sliders',
+        desc2: 'Segmento',
+        link: 'https://segmento-target.ru'
+      },             
+      {
+        img: 'img/p6.jpg',
+        desc: 'Fullscreen Layout, Sticky Sidebar, Google Maps API',
+        desc2: 'Viven',
+        link: 'http://viven.com.ua/'
+      },
+      {
+        img: 'img/p9.jpg',
+        desc: 'Form Validation, Relative Dashed Background',
+        desc2: 'Bizwebinar',
+        link: 'http://bizwebinar.ru/'
       }
     ]
   }
@@ -61,6 +79,4 @@ $(function(){
   var rendered = Mustache.render(template, projects);
   $('.portfolio').html(rendered);
 
-
-  console.log()
 })

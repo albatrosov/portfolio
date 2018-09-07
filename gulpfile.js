@@ -5,7 +5,7 @@ var sass = require('gulp-sass');
 var autoPrefixer = require('gulp-autoprefixer');
 var cmq = require('gulp-merge-media-queries');
 var cleanCss = require('gulp-clean-css');
-let uglify = require('gulp-uglify-es').default;
+var uglify = require('gulp-uglify-es').default;
 var concat = require('gulp-concat');
 
 gulp.task('sass',function(){
@@ -44,9 +44,7 @@ gulp.task('js',function(){
         .pipe(gulp.dest('js'))
 });
 
-
 gulp.task('default',function(){
-    gulp.watch('dev/js/**/*.js',['js']);
-    gulp.watch('dev/css/**/*.scss',['sass']);
+    gulp.watch('dev/js/**/*.js', gulp.series('js'));
+    gulp.watch('dev/css/**/*.scss', gulp.series('sass'));
 });
-
